@@ -11,10 +11,6 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link
-      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
@@ -24,7 +20,7 @@
     <!--==================================HEADER=======================================-->
     <header class="page-header">
       <div class="container main-nav">
-        <a class="logo animate__heartBeat" href="./index.html" lang="en">
+        <a class="logo" href="./index.html" lang="en">
           <span class="logo-accent">Web</span>Studio</a
         >
         <nav>
@@ -72,7 +68,7 @@
           Эффективные решения <br />
           для вашего бизнеса
         </h1>
-        <button class="hero-button" type="button" data-modal-open>
+        <button class="button" type="button" data-modal-open>
           Заказать услугу
         </button>
       </section>
@@ -482,8 +478,9 @@
               type="email"
               name="user-email"
               placeholder="E-mail"
+              required
             />
-            <button class="hero-button subscription-button" type="submit">
+            <button class="button" type="submit">
               Подписаться
               <svg class="subscription-button-icon">
                 <use href="./images/sprite.svg#send"></use>
@@ -569,9 +566,7 @@
             </p>
           </label>
 
-          <button class="hero-button modal-button" type="submit">
-            Отправить
-          </button>
+          <button class="button" type="submit">Отправить</button>
         </form>
       </div>
     </div>
