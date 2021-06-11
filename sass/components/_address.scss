@@ -1,50 +1,52 @@
 .address {
   display: flex;
   align-items: center;
-  margin-left: auto;
+
+  &__item {
+    display: flex;
+    align-self: center;
+  }
+
+  &__item + &__item {
+    margin-left: 30px;
+  }
+
+  &__link {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    transition: color var(--timing) var(--timing-function);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-text-color);
+    }
+  }
 }
 
-.address .item + .item {
-  margin-left: 30px;
-}
-
-.address .item {
-  display: flex;
-  align-self: center;
-}
-
-.address .address-link {
-  color: var(--primary-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-
-  transition: color var(--timing) var(--timing-function);
-}
-
-.icon-mail {
+.address__icon-mail {
   width: 16px;
   height: 12px;
   margin-right: 10px;
   fill: var(--primary-text-color);
+
+  .address__link:hover &,
+  .address__link:focus & {
+    fill: currentColor;
+  }
 }
 
-.icon-smartphone {
+.address__icon-smartphone {
   width: 10px;
   height: 16px;
   margin-right: 10px;
   fill: var(--primary-text-color);
-}
 
-.address-link:hover,
-.address-link:focus {
-  color: var(--accent-text-color);
-}
-
-.address-link:hover .icon-mail,
-.address-link:hover .icon-smartphone,
-.address-link:focus .icon-mail,
-.address-link:focus .icon-smartphone {
-  fill: currentColor;
+  .address__link:hover &,
+  .address__link:focus & {
+    fill: currentColor;
+  }
 }

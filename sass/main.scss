@@ -11,11 +11,23 @@
 // COMPONENTS
 @import './components/button';
 @import './components/logo';
-@import './components/current-page';
 @import './components/navigation';
+@import './components/current-page';
 @import './components/address';
+@import './components/social-buttons';
+@import './components/backdrop';
+@import './components/modal-window';
+@import './components/modal-form';
+@import './components/placeholders';
 
 // LAYOUT
 
 @import './layout/header';
 @import './layout/hero';
+@import './layout/features';
+@import './layout/work';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/footer';
+@import './layout/portfolio/filter';
+@import './layout/portfolio/projects';

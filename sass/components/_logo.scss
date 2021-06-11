@@ -4,7 +4,12 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-}
-.logo-accent {
-  color: var(--accent-text-color);
+
+  &_theme_accent {
+    color: var(--accent-text-color);
+  }
+
+  &_theme_white {
+    color: var(--white-color);
+  }
 }

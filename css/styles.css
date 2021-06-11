@@ -324,30 +324,6 @@ ul {
   pointer-events: none;
 }
 
-.btn-close {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 30px;
-  height: 30px;
-  background-color: transparent;
-  border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  padding: 5px;
-}
-
-.btn-close-icon {
-  width: 18px;
-  height: 18px;
-
-  transition: fill var(--timing) var(--timing-function);
-}
-
-.btn-close:hover .btn-close-icon {
-  fill: var(--accent-text-color);
-}
-
 .modal {
   display: flex;
   position: absolute;
@@ -361,6 +337,30 @@ ul {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
   transform: translate(-50%, -50%);
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  padding: 5px;
+}
+
+.modal-close-btn-icon {
+  width: 18px;
+  height: 18px;
+
+  transition: fill var(--timing) var(--timing-function);
+}
+
+.modal-close-btn:hover .modal-close-btn-icon {
+  fill: var(--accent-text-color);
 }
 
 .modal-form {
@@ -815,6 +815,8 @@ ul {
 }
 
 .project .item {
+  flex-basis: calc((100% - 90px) / 3);
+  position: relative;
   transition: box-shadow var(--timing) var(--timing-function);
 }
 
